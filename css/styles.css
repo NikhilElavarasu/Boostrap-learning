@@ -31,3 +31,12 @@
 .row-content-header {
     padding-top: 10px;
 }
+
+body {
+    padding-top: 50px;
+    z-index: 0;
+}
+
+.navbar-dark {
+    background: #512DA8;
+}
