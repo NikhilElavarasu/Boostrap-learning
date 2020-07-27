@@ -47,3 +47,7 @@ body {
     border-right: 1px solid #ddd;
     padding: 10px;
 }
+
+#accordion {
+    cursor: pointer;
+}
