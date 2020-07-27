@@ -48,6 +48,6 @@ body {
     padding: 10px;
 }
 
-#accordion {
+#accordion, .navbar-text {
     cursor: pointer;
 }
