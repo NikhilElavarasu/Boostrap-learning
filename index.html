@@ -122,6 +122,7 @@
             </div>
         </div>
     </div>
+
     <nav class="navbar navbar-dark navbar-expand-sm fixed-top">
         <div class="container">
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#Navbar">
@@ -146,7 +147,7 @@
                     </a></li>
                 </ul>
                 <span class="navbar-text">
-                    <a data-target="#loginModal" data-toggle="modal">
+                    <a id="loginButton">
                         <span class="fa fa-sign-in fa-lg"></span> Login
                     </a>
                 </span>
@@ -167,7 +168,7 @@
                             <img src="./img/logo.png" alt="logo" class="img-fluid">
                         </div>
                         <div class="col-12 col-sm-6 align-self-center">
-                            <a data-target="#reserveForm" type="button" class="btn btn-warning btn-lg btn-block" data-toggle="modal">
+                            <a type="button" class="btn btn-warning btn-lg btn-block" id="reserveButton">
                                 Reserve Table
                             </a>
                         </div>
@@ -290,8 +291,8 @@
                 <div class="col-4 offset-1 col-sm-2">
                     <h5>Links</h5>
                     <ul class="list-unstyled">
-                        <li><a href="./index.html">Home</a></li>
-                        <li><a href="#">About</a></li>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="./aboutus.html">About</a></li>
                         <li><a href="#">Menu</a></li>
                         <li><a href="./contactus.html">Contact</a></li>
                     </ul>
@@ -354,6 +355,12 @@
                     $('#carouselButton').children('span').removeClass('fa-play');
                     $('#carouselButton').children('span').addClass('fa-pause');
                 }
+            });
+            $('#reserveButton').click(function(){
+                $('#reserveForm').modal('toggle');
+            });
+            $('#loginButton').click(function(){
+                $('#loginModal').modal('toggle');
             });
         });
     </script>
